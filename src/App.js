@@ -22,7 +22,6 @@ const RepositoryNameQuery = graphql`
 // Immediately load the query as our app starts. For a real app, we'd move this
 // into our routing configuration, preloading data as we transition to new routes.
 const preloadedQuery = loadQuery(RelayEnvironment, RepositoryNameQuery, {
-  /* query variables */
 });
 
 // Inner component that reads the preloaded query results via `usePreloadedQuery()`.
